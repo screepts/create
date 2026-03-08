@@ -1,11 +1,16 @@
 {
   "name": "@screepts/create",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Intialize an all-in-one Screeps World project",
   "license": "ISC",
   "author": "Shu",
-  "repository": "screepts/create",
-  "bin": "dist/cli.mjs",
+  "repository": {
+    "type": "git",
+    "url": "https://githiub.com/screepts/create.git"
+  },
+  "bin": {
+    "create": "dist/cli.mjs"
+  },
   "files": [
     "dist"
   ],
