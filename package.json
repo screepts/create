@@ -24,7 +24,10 @@
     "build": "tsdown",
     "prepublishOnly": "node --run build",
     "lint": "oxlint",
-    "fmt": "oxfmt"
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "test:types": "tsc --noEmit",
+    "test": "node --run fmt:check && node --run lint && node --run test:types"
   },
   "devDependencies": {
     "@clack/prompts": "^1.1.0",
