@@ -23,11 +23,10 @@
   "scripts": {
     "build": "tsdown",
     "prepublishOnly": "node --run build",
-    "lint": "oxlint",
+    "lint": "oxlint --type-check --type-aware",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "test:types": "tsc --noEmit",
-    "test": "node --run fmt:check && node --run lint && node --run test:types"
+    "test": "node --run fmt:check && node --run lint"
   },
   "devDependencies": {
     "@clack/prompts": "^1.1.0",
@@ -37,6 +36,7 @@
     "cac": "^7.0.0",
     "oxfmt": ">=0.40.0 <2.0.0",
     "oxlint": "^1.51.0",
+    "oxlint-tsgolint": ">=0.17.0 <2.0.0",
     "tsdown": ">=0.21.0 <2.0.0",
     "typescript": "^5.9.3"
   },
