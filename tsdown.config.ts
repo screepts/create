@@ -5,7 +5,7 @@ export default defineConfig({
   entry: "./src/{index,cli}.ts",
   minify: true,
   deps: {
-    onlyAllowBundle: false,
+    onlyBundle: false,
   },
   target: "node22",
 })

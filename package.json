@@ -9,7 +9,7 @@
     "url": "https://githiub.com/screepts/create.git"
   },
   "bin": {
-    "create": "dist/cli.mjs"
+    "create": "./dist/cli.mjs"
   },
   "files": [
     "dist"
@@ -37,8 +37,8 @@
     "oxfmt": ">=0.40.0 <2.0.0",
     "oxlint": "^1.51.0",
     "oxlint-tsgolint": ">=0.17.0 <2.0.0",
-    "tsdown": ">=0.21.0 <2.0.0",
-    "typescript": "^5.9.3"
+    "tsdown": ">=0.22.3 <2.0.0",
+    "typescript": "^6.0.3"
   },
   "inlinedDependencies": {
     "@clack/core": "1.1.0",
